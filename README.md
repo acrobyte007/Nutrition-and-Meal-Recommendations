@@ -1,3 +1,5 @@
+![First](https://github.com/acrobyte007/Nutrition-and-Meal-Recommendations/blob/main/first.PNG)
+![Second](https://github.com/acrobyte007/Nutrition-and-Meal-Recommendations/blob/main/second.PNG)
 # Nutrition and Meal Recommendations
 
 This is a Django-based web application that provides personalized meal suggestions and daily nutrition information based on user input, including age, gender, height, weight, fitness goals, and dietary preferences.
