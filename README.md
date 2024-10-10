@@ -1,4 +1,4 @@
-# Meal Recommendations & Daily Nutrition Information
+# Nutrition and Meal Recommendations
 
 This is a Django-based web application that provides personalized meal suggestions and daily nutrition information based on user input, including age, gender, height, weight, fitness goals, and dietary preferences.
 
