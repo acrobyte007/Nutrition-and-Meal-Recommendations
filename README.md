@@ -28,7 +28,7 @@ This is a Django-based web application that provides personalized meal suggestio
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/your-username/meal-recommendation-app.git
+    git clone https://github.com/acrobyte007/Nutrition-and-Meal-Recommendations
     cd meal-recommendation-app
     ```
 
