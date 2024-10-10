@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition and Meal Recommendations</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS if necessary -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .column {
+            width: 48%;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nutrition and Meal Recommendations</h1>
+        <form id="recommendationForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="Age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="Height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="Weight" required>
+
+            <label for="fitnessGoal">Fitness Goal:</label>
+            <select id="fitnessGoal" name="Fitness_Goal" required>
+                <option value="Weight Loss">Lose Weight</option>
+                <option value="Maintenance">Maintain Weight</option>
+                <option value="Muscle Gain">Gain Muscle</option>
+            </select>
+
+            <label for="dietaryPreference">Dietary Preference:</label>
+            <select id="dietaryPreference" name="dietaryPreference" required>
+                
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Omnivore">Non Vegetarian</option>
+            </select>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <div class="results" id="results"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- External JS file -->
+</body>
+</html>
