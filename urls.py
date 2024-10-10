@@ -1,6 +1,7 @@
-from django.urls import path
-from .views import get_recommendations 
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('get_recommendations/', get_recommendations, name='get_recommendations'),  
+    path('admin/', admin.site.urls),
+    path('api/', include('myapp.urls')),  
 ]
